@@ -4,10 +4,26 @@
     }
 }
 
-@media (max-width: 992px) {
+@media (min-width: 992px) {
+    .logo-default {
+		display: block !important;
+	}
+	.logo-small {
+		display: none !important;
+	}
+}
+
+@media (max-width: 991px) {
     .navbar-brand {
         margin-bottom: 0;
     }
+
+    .logo-default {
+        display: none !important;
+    }
+    .logo-small {
+		display: block !important;
+	}
 
     .custom_nav-container {
         flex-direction: row;
